@@ -1,0 +1,51 @@
+<div class="lp-title small">{{ section.settings.anchor-title }}</div>
+<div class="img-btns-flex-wrapper">
+  {% for block in section.blocks %}
+  <a href="{{ block.settings.anchorlink-url }}" class="img-link-block w-inline-block">
+    <img src="{{ block.settings.anchorlink-image | img_url: 'large' }}"></a>
+
+{% endfor %}
+</div>
+
+{% schema %}
+
+{
+    "name": "Anchor Links",
+    "max_blocks": 4,
+	"settings": [
+		{
+			"id": "anchor-title",
+			"type": "text",
+			"label": "Anchor Title"
+		}
+				],
+	"blocks":
+	[
+      {
+        "type": "anchor-link",
+        "name": "anchorlink",
+        "settings": [
+          {
+            "id": "anchorlink-url",
+            "type": "url",
+            "label": "Achorlink URL"
+          },
+		{
+			"id": "anchorlink-image",
+			"type": "image_picker",
+			"label": "Achorlink Image"
+		}
+		
+        ]
+      }
+    ]
+  }
+
+
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

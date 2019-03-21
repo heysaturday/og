@@ -1,0 +1,92 @@
+   <!-- Alert Bar Custom Code -->
+    
+    <style>
+    div#shopify-section-header {
+    position: relative;
+}
+
+.alert-bar { 
+    
+    padding: 10px;
+  background: {{section.settings.bg_color}};
+  text-align:center;
+  color:white;
+  font-weight:700;
+  letter-spacing:1px;
+ 
+}
+    .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: 300;
+    float: right;
+    font-size: 40px;
+    line-height: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+    
+    </style>
+    
+	
+    
+		{% assign show_page = section.settings.page_select %}
+		{% if template == show_page or show_page == "" %}
+
+	
+   {% unless section.settings.alert-text == blank %}
+<div id="bar" class="alert-bar"><div class="wrapper">
+  {% unless section.settings.close-btn == true %}
+  <span class="closebtn" onclick='$("#bar").hide()'>&times;</span>
+  {% endunless %}
+  {{ section.settings.alert-text }} 
+  
+      </div></div>
+{% endunless %}{% endif %}
+    <!-- Alert Bar End --> 
+
+
+{% schema %}
+  {
+    "name": "Alert Bar",
+    "settings": [
+	  {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color",
+		"default": "#70C7C8",
+		"info": "The default color is #70C7C8"
+        
+      },
+      {
+        "type": "text",
+        "id": "alert-text",
+        "label": "Alert Bar Text"
+        
+      },
+	  {
+   		"type": "select",
+   		"id": "page_select",
+   		"options": [
+			{ "value": "", "label": "All Pages"},
+      		{ "value": "index", "label": "Home Page Only"},
+      		{ "value": "product", "label": "Product Pages Only"}
+   		],
+   		"label": "Display on:",
+		"info": "Select where to display the alert bar"
+		
+	  },
+	  {
+   		"type":      "checkbox",
+   		"id":        "close-btn",
+   		"label":     "Hide Close Button?",
+   		"default":   false
+   		
+	  }
+    ]
+  }
+{% endschema %}

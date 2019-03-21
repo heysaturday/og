@@ -1,0 +1,108 @@
+{% if section.settings.promo_message != blank %}
+<div class="promo-call-out">{{ section.settings.promo_message }}<a href="{{ section.settings.btn_link}}" class="promo_btn">{{ section.settings.promo_btn_txt }}</a></div>
+{% endif %}
+<div class="grid">
+  
+  <div class="grid__item large--one-whole">
+
+    <header class="section-header text-center">
+      {% unless section.settings.page_title == blank %}
+      <div style="margin-top:30px;" class="page_title">{{ section.settings.page_title }}</div>
+      <span class="page_subtitle">{{ section.settings.page_subtitle }}</span>
+      {% endunless %}
+      
+    </header>
+    <div class="grid">
+      <div class="grid__item large--four-fifths push--large--one-tenth">
+        <div class="rte rte--nomargin rte--indented-images">
+          {{ page.content }}
+        </div>
+      </div>
+    </div>
+</div>     
+</div>
+
+
+      
+        <div class="row-full">
+          <div class="video-contain">
+          <div class="video-wrapper">
+            {% if section.settings.video_url == blank %}
+              <iframe src="//www.youtube.com/embed/_9VUPq3SxOc?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+            {% else %}
+              {% if section.settings.video_url.type == "youtube" %}
+                <iframe src="//www.youtube.com/embed/{{ section.settings.video_url.id }}?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+              {% endif %}
+              {% if section.settings.video_url.type == "vimeo" %}
+                <iframe src="//player.vimeo.com/video/{{ section.settings.video_url.id }}?color={{ settings.color_secondary | remove: "#" }}&byline=0&portrait=0&badge=0" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+              {% endif %}
+            {% endif %}
+            </div></div>
+          <a class="mad-video-link" target="_blank" href="{{ section.settings.outlink }}">{{ section.settings.link_text }}</a>	
+          
+        </div>
+		
+  {% if section.settings.stats_img %}
+	<img style="margin:50px 0;" src="{{ section.settings.stats_img | img_url: '990x' }}"/>
+  {% endif %}
+		 
+       
+     
+    
+{% schema %}
+  {
+    "name": "Page Settings",
+    "settings": [
+	  {
+		"type": "html",
+		"id": "promo_message",
+		"label": "Promo Message"
+	  },
+	  {
+		"id": "promo_btn_txt",
+		"type": "text",
+		"label": "Button Text"
+	  },
+	  {
+		"id": "btn_link",
+		"type": "url",
+		"label": "Button Link"
+	  },
+	  {
+        "type": "text",
+        "id": "page_title",
+        "label": "Page Title"
+        
+      },
+	  {
+		"type": "text",
+		"id": "page_subtitle",
+		"label": "Page Subtitle"
+	  },
+	  {
+   		"id": "video_url",
+   		"type": "video_url",
+   		"label": "Video URL",
+   		"accept": ["youtube", "vimeo"],
+   		"default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+	  },
+	  {
+		"id": "link_text",
+		"type": "text",
+		"label": "Link text"
+	  },
+	  {
+		"id": "outlink",
+		"type": "url",
+		"label": "Link URL"
+	  },
+	  {
+		"id": "stats_img",
+		"type": "image_picker",
+		"label": "Stats Image"
+	  }
+	  
+	  
+    ]
+  }
+{% endschema %}

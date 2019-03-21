@@ -1,0 +1,1161 @@
+{
+  "current": {
+    "color_body_bg": "#ffffff",
+    "color_body_text": "#000000",
+    "color_borders": "#1c1d1d",
+    "color_primary": "#c7a7be",
+    "color_secondary": "#c7a7be",
+    "color_product_background": "#f7f7f7",
+    "color_sale_tag": "#990000",
+    "color_input": "#f6f6f6",
+    "color_newsletter": "#f6f6f6",
+    "color_drawer_background": "#f6f6f6",
+    "color_drawer_text": "#000000",
+    "color_drawer_border": "#343535",
+    "color_drawer_button": "#c7a7be",
+    "color_drawer_button_text": "#ffffff",
+    "type_header_family": "'Europa', sans-serif",
+    "type_header_base_size": "30px",
+    "type_header_border_thickness": "1px",
+    "type_header_font_weight": "700",
+    "type_accent_family": "'Europa', sans-serif",
+    "type_accent_font_weight": "700",
+    "type_accent_transform": true,
+    "type_accent_spacing": true,
+    "type_base_family": "'Europa', sans-serif",
+    "type_base_size": "16px",
+    "type_body_font_weight": "400",
+    "type_base_italize_titles": true,
+    "cart_type": "page",
+    "cart_notes_enable": false,
+    "social_facebook_link": "https:\/\/fb.com\/olliegraybras",
+    "social_twitter_link": "https:\/\/twitter.com\/OllieGrayBras",
+    "social_pinterest_link": "https:\/\/www.pinterest.com\/olliegraybras\/",
+    "social_instagram_link": "https:\/\/www.instagram.com\/olliegraybras",
+    "social_snapchat_link": "",
+    "social_google_plus_link": "",
+    "social_tumblr_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "social_fancy_link": "",
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "favicon": "shopify:\/\/shop_images\/57e59d40617f35106dc95a5a_favicon.png",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Logo-horiz_mauve_450x200.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "large",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Playfair Display",
+    "checkout_body_font": "Open Sans",
+    "checkout_accent_color": "#a26b25",
+    "checkout_button_color": "#000000",
+    "checkout_error_color": "#ff6d6d",
+    "type_font_weight": "700",
+    "checkout_use_header_image": false,
+    "checkout_logo": "",
+    "checkout_use_body_background_image": false,
+    "checkout_use_sidebar_background_image": false,
+    "checkout_banner_background_color": "#fff",
+    "checkout_call_to_action_color": "#a26b25",
+    "collection_products_grid": "collage",
+    "collection_sort_enable": false,
+    "collection_tags_enable": true,
+    "customer_layout": "customer_area",
+    "favicon_enable": false,
+    "footer_newsletter_enable": true,
+    "footer_quicklinks_enable": true,
+    "header_search_enable": false,
+    "hero_home_auto": true,
+    "home_featured_collections_sort": "auto",
+    "home_featured_products_grid": "collage",
+    "home_hero_auto_speed": "7000",
+    "product_vendor_enable": false,
+    "product_zoom_enable": true,
+    "social_sharing_style": "clean",
+    "sections": {
+      "slideshow": {
+        "type": "slideshow",
+        "blocks": {
+          "1528836357369": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/OLL_Hero_Image_double.png",
+              "slide_text_color": "is-dark",
+              "slide_subheading": "",
+              "slide_heading": "",
+              "slide_cta": "",
+              "slide_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1528836357369"
+        ],
+        "settings": {
+          "hero_home_auto": false,
+          "home_hero_auto_speed": "5000"
+        }
+      },
+      "featured-content": {
+        "type": "featured-content",
+        "settings": {}
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "settings": {}
+      },
+      "drawer-menu": {
+        "type": "drawer-menu",
+        "settings": {
+          "drawer_top_link_list": "new-main",
+          "drawer_bottom_link_list": ""
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "main_menu_link_list": "new-main",
+          "logo": "shopify:\/\/shop_images\/OllieGray_FullLogo_Black_CMYK_134x134_crop_center_2x_a29ee172-bfb9-4072-854e-890f71060fbc.png",
+          "logo-inverted": "",
+          "logo_max_width": "200",
+          "header_search_enable": false
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "footer_link_list": "new-footer",
+          "copyright": "©2018 Ollie Gray Bras"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "zoom_enable": false,
+          "social_sharing_products": true
+        }
+      },
+      "1482264207455": {
+        "type": "advanced-content",
+        "blocks": {
+          "1482264207455-0": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"featured-text\">\nThe Anywhere Bra™ is an athleisure-inspired pumping, nursing, and maternity bra that is perfect for practically anything. Now moms can do it all. And do it in one bra.<br>\n<a href=\"pages\/shop\">Shop Now<\/a>\n<\/div>",
+              "width": "100%",
+              "alignment": "top-middle"
+            }
+          }
+        },
+        "block_order": [
+          "1482264207455-0"
+        ],
+        "settings": {}
+      },
+      "collection-image-template": {
+        "type": "collection-image-template",
+        "settings": {
+          "collection_products_grid": "collage",
+          "collection_tags_enable": false,
+          "product_vendor_enable": false
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "header_img": "shopify:\/\/shop_images\/0001_Group_figure.png",
+          "collection1": "prints",
+          "collection2": "solids",
+          "collection3": "extras",
+          "collection_products_grid": "grid",
+          "collection_tags_enable": false,
+          "product_vendor_enable": false
+        }
+      },
+      "related-products": {
+        "type": "related-products",
+        "settings": {
+          "show_related_products": true,
+          "related_title": "You may also like...",
+          "related_grid_num": "3",
+          "related_grid_row": "1"
+        }
+      },
+      "1528215476243": {
+        "type": "advanced-content",
+        "blocks": {
+          "1528215476243-0": {
+            "type": "html",
+            "settings": {
+              "code": "<div style=\"text-align:center; margin-bottom:0px;\">\n<h1 style=\"margin-bottom:0px; font-size:30px; font-weight:bold; letter-spacing: .1em; text-transform:none;\"><\/h1>\n<\/div>",
+              "width": "100%",
+              "alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "1528215476243-0"
+        ],
+        "settings": {}
+      },
+      "1528746752785": {
+        "type": "image_text_quote",
+        "blocks": {
+          "1528746752785-0": {
+            "type": "select",
+            "settings": {
+              "message-text": "A must-have for a working mom who has a fast-paced job, with no time to mess around with a bra that doesn’t fit well or function properly.",
+              "author-text": "Eva"
+            }
+          }
+        },
+        "block_order": [
+          "1528746752785-0"
+        ],
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Desktop_Function_image.jpg",
+          "layout": "left",
+          "title": "FUNCTION",
+          "text": "<p>The Anywhere Bra&trade; is super functional and liberating, meaning modern moms can continue to do whatever they want, even while they are pumping or breastfeeding.<\/p>",
+          "button_label": "Shop White",
+          "button_link": "shopify:\/\/products\/white"
+        }
+      },
+      "1528755015918": {
+        "type": "image_text_quote",
+        "blocks": {
+          "1528755015918-0": {
+            "type": "select",
+            "settings": {
+              "message-text": "The most comfortable bra for any mom! Great for nursing and\/or pumping hands-free (which is so important for moms of multiple little ones!)",
+              "author-text": "Heather"
+            }
+          }
+        },
+        "block_order": [
+          "1528755015918-0"
+        ],
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Desktop_Comfort_image.jpg",
+          "layout": "right",
+          "title": "Comfort",
+          "text": "<p>The supportive and secure fit of The Anywhere Bra&trade; allows you to worry less about your bra and focus more on pursuing the things that make YOU happy. Afterall, happy mom = happy baby.<\/p>",
+          "button_label": "Shop the bitsy",
+          "button_link": "shopify:\/\/products\/og2-the-bitsy"
+        }
+      },
+      "1528755181426": {
+        "type": "image_text_quote",
+        "blocks": {
+          "1528755181426-0": {
+            "type": "select",
+            "settings": {
+              "message-text": "Great pumping\/nursing bra for moms who don’t want the matronly nursing bra look! Fabric is high quality and designs are super cute!",
+              "author-text": "Katie"
+            }
+          }
+        },
+        "block_order": [
+          "1528755181426-0"
+        ],
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Desktop_Style_image_V2.png",
+          "layout": "left",
+          "title": "Style",
+          "text": "<p>Who said pumping or nursing bras had to be boring? Our fashion-forward styles and athleisure-inspired design allow moms to feel more like themselves while showcasing their personal style.<\/p>",
+          "button_label": "shop prints",
+          "button_link": "shopify:\/\/pages\/shop"
+        }
+      },
+      "new_footer": {
+        "type": "new_footer",
+        "blocks": {
+          "1528818186229": {
+            "type": "block-1",
+            "settings": {
+              "link_title": "Shop",
+              "url": "shopify:\/\/pages\/shop"
+            }
+          },
+          "1528819297891": {
+            "type": "block-1",
+            "settings": {
+              "link_title": "Our Bra",
+              "url": "shopify:\/\/pages\/our-bra"
+            }
+          },
+          "1528818270000": {
+            "type": "block-1",
+            "settings": {
+              "link_title": "Our Story",
+              "url": "shopify:\/\/pages\/our-story"
+            }
+          },
+          "1528818202979": {
+            "type": "block-2",
+            "settings": {
+              "link_title": "Sizing + Care",
+              "url": "shopify:\/\/pages\/sizing-care"
+            }
+          },
+          "1528819887140": {
+            "type": "block-2",
+            "settings": {
+              "link_title": "Contact Us",
+              "url": "shopify:\/\/pages\/contact-1"
+            }
+          },
+          "1528819903297": {
+            "type": "block-2",
+            "settings": {
+              "link_title": "In the Press",
+              "url": "#"
+            }
+          },
+          "1528819776628": {
+            "type": "block-3",
+            "settings": {
+              "link_title": "Madelyn's Fund",
+              "url": "shopify:\/\/pages\/madelyns-fund"
+            }
+          },
+          "1528819825323": {
+            "type": "block-3",
+            "settings": {
+              "link_title": "Fitness For Mommy",
+              "url": "shopify:\/\/pages\/fitnessformommy"
+            }
+          },
+          "1528819844490": {
+            "type": "block-3",
+            "settings": {
+              "link_title": "Returns & Exchanges",
+              "url": "shopify:\/\/pages\/returns"
+            }
+          }
+        },
+        "block_order": [
+          "1528818186229",
+          "1528819297891",
+          "1528818270000",
+          "1528818202979",
+          "1528819887140",
+          "1528819903297",
+          "1528819776628",
+          "1528819825323",
+          "1528819844490"
+        ],
+        "settings": {
+          "business_name": "Ollie Gray Bras"
+        }
+      },
+      "header-cta": {
+        "type": "header-cta",
+        "settings": {}
+      },
+      "accordions": {
+        "type": "accordions",
+        "blocks": {
+          "1529421799607": {
+            "type": "accordion",
+            "settings": {
+              "title": "Fitness for Moms",
+              "content": "<p>As a new(ish) mom, I am often asked about fitness during and after pregnancy. It&rsquo;s super important to live a healthy lifestyle, which will help you have a great pregnancy, and then instill good health and wellness values in your children when they come along.<\/p>\n<p>The top two things I tell expecting moms are to have a good relationship and dialog with your doctor and then listen to your body. There&rsquo;s no prescription for pregnancy and everybody&rsquo;s body is different. And really, every pregnancy is different, too, no matter how many kids you&rsquo;ve already had.<\/p>"
+            }
+          },
+          "1529421924215": {
+            "type": "accordion",
+            "settings": {
+              "title": "Have a good relationship with your doctor\/healthcare provider",
+              "content": "<p>Having a very good and healthy relationship with your doctor or healthcare professional is super important. Your health and your baby&rsquo;s health is obviously the most important thing, so it&rsquo;s helpful to have open and honest conversations with your healthcare provider as early as possible. Some doctors don&rsquo;t want you to have an active pregnancy.<\/p>\n<p>You have to find a great doctor that is on the same page that agrees and supports you. And no matter how independent you are, or what you read or hear, once your doctor\/provider has your trust, you need to listen to that person even if it&rsquo;s not always exactly what you want to hear, or what&rsquo;s easiest.<\/p>"
+            }
+          },
+          "1529422049291": {
+            "type": "accordion",
+            "settings": {
+              "title": "Don't get crazy",
+              "content": "<p>Once they&rsquo;ve gotten their healthcare provider&rsquo;s input, and the green light to exercise, I have found some pieces of advice to be helpful for my clients (and myself). Don&rsquo;t start a new physical exercise or activity when you&rsquo;re pregnant. All of us have the fear of gaining weight during pregnancy, but when you&rsquo;re pregnant&mdash;that&rsquo;s not the time to start a new thing. Your body is this awesome, well-oiled machine that&rsquo;s so used to managing and going through life with you. Don&rsquo;t confuse it! Like for me&mdash;I was doing heavy lifting and cross-fit, but when I got pregnant I wasn&rsquo;t going to pick up anything dramatically different, like running marathons. It&rsquo;s important to stick with exercise that you&rsquo;re used to.<\/p>\n<p>For the comfort of keeping a healthy routine, as well as to avoid shocking your body.<\/p>"
+            }
+          },
+          "1529422087792": {
+            "type": "accordion",
+            "settings": {
+              "title": "Give yourself praise",
+              "content": "<p>Give yourself praise! We&rsquo;re always so constantly hard on ourselves and we&rsquo;re frustrated if things don&rsquo;t go right or we&rsquo;re not reaching our goals within our timelines, and frustration can set in. But seriously, you have done the most amazing thing and accomplished one of the greatest goals in life&mdash;you created a human! Great job!<\/p>"
+            }
+          },
+          "1529422103979": {
+            "type": "accordion",
+            "settings": {
+              "title": "An opportunity to teach",
+              "content": "<p>When you have a child, it&rsquo;s so easy to make the kid an excuse. I hear it fairly often. &ldquo;I don&rsquo;t have any time. I&rsquo;m so tired.&rdquo; While valid, they&rsquo;re still excuses. And excuses are easy to conquer.<\/p>\n<p><\/p>\n<p>The simplest thing to do if you don&rsquo;t have time, is to take the kid along with you. It&rsquo;s a great opportunity to instill in your child the value of a healthy lifestyle. Whether they sit there and watch you, or you get them involved, they are picking up your good habits and are so happy to be with you, no matter how sweaty you are!<\/p>\n<p><\/p>\n<p>Once your child gets mobile, you can get them more engaged. The only thing is to make sure you are looking out for your child&rsquo;s safety, staying aware of them and their surroundings, and remain conscientious of others. I create a few short clips of some of the ways I get exercise with my little one at the gym, some including him and somewhere he is more of a spectator. You can see he loves it, and I know he will grow up with health and fitness as an important part of his life, because he sees it&rsquo;s an important part of mine.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1529421799607",
+          "1529421924215",
+          "1529422049291",
+          "1529422087792",
+          "1529422103979"
+        ],
+        "settings": {}
+      },
+      "media-block": {
+        "type": "media-block",
+        "settings": {}
+      },
+      "news-grid": {
+        "type": "news-grid",
+        "blocks": {
+          "1528844449295": {
+            "type": "select",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/people_logo.png",
+              "preview": "Peta Murgatroyd Is Back at the Gym — and Doing 70 Sit-Ups! — 17 Days After Giving Birth",
+              "credit": "People Magazine"
+            }
+          },
+          "1528900848641": {
+            "type": "select",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/CALogoMark.png",
+              "preview": "Charlotte mom creates all-in-one maternity, breastfeeding and hands-free pump bra",
+              "credit": "Charlotte Agenda"
+            }
+          },
+          "1528900913681": {
+            "type": "select",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/popsugar-vector-logo-small.png",
+              "preview": "This New Nursing Bra Promises to Solve Your Pumping Problems Too",
+              "credit": "Popsugar"
+            }
+          },
+          "1528900957315": {
+            "type": "select",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/sheknows_logo.png",
+              "preview": "5 New Nursing Bra Lines to Add to Your Stash",
+              "credit": "She Knows"
+            }
+          },
+          "1528900987489": {
+            "type": "select",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/pregandnewborn_logo.png",
+              "preview": "All access - Nursing Bras for Every Wear",
+              "credit": "Pregnancy & Newborn"
+            }
+          }
+        },
+        "block_order": [
+          "1528844449295",
+          "1528900848641",
+          "1528900913681",
+          "1528900957315",
+          "1528900987489"
+        ],
+        "settings": {
+          "header_img": "shopify:\/\/shop_images\/0002_Bras_laydown.png",
+          "page_title": "Ollie Gray in the Press",
+          "page_subtitle": ""
+        }
+      },
+      "advanced-content": {
+        "type": "advanced-content",
+        "blocks": {
+          "1528840331677": {
+            "type": "html",
+            "settings": {
+              "code": "<div style=\"text-align:center;\">\n<h2>This is the imgs page<\/h2>This text can be used to share information about your brand with customers.<\/div>",
+              "width": "100%",
+              "alignment": "top-middle"
+            }
+          }
+        },
+        "block_order": [
+          "1528840331677"
+        ],
+        "settings": {}
+      },
+      "madelyn-template": {
+        "type": "madelyn-template",
+        "settings": {
+          "promo_message": "",
+          "promo_btn_txt": "Shop for a Cause",
+          "btn_link": "https:\/\/olliegraybras.com\/pages\/shop",
+          "page_title": "Ollie Gray + Madelyn’s Fund",
+          "page_subtitle": "Helping moms and babies be their happiest and healthiest",
+          "video_url": "https:\/\/www.youtube.com\/watch?v=hO654smjUkk",
+          "link_text": "Click here to learn more about Madelyn’s Fund or make a donation directly to them.",
+          "outlink": "http:\/\/www.madelynsfund.org",
+          "stats_img": ""
+        }
+      },
+      "story-template": {
+        "type": "story-template",
+        "settings": {
+          "header_img": "shopify:\/\/shop_images\/OurStory_photo.jpg",
+          "page_title": "Hey ladies!",
+          "page_subtitle": ""
+        }
+      },
+      "bra-template": {
+        "type": "bra-template",
+        "blocks": {
+          "1528917291366": {
+            "type": "select",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/0000_Straps.png",
+              "layout": "left",
+              "title": "Straps",
+              "text": "<p>Our second, inner strap&nbsp;keeps the strap and bra up and in place while nursing&nbsp;<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1528917406984": {
+            "type": "select",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/0001_Clasps.png",
+              "layout": "right",
+              "title": "Clasps",
+              "text": "<p>Easier-to-release clasps provide a better nursing experience<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1528917437111": {
+            "type": "select",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/0002_HookandEye.png",
+              "layout": "left",
+              "title": "Hook & Eye Closures",
+              "text": "<p>These closures offer flexibility and added comfort for fluctuating breast size<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1528917479219": {
+            "type": "select",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/0003_Cups.png",
+              "layout": "right",
+              "title": "Openings",
+              "text": "<p>Expertly engineered openings hold pumps securely in place. Works with most&nbsp;pumps on the market&mdash;even new tube pumps<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1528917291366",
+          "1528917406984",
+          "1528917437111",
+          "1528917479219"
+        ],
+        "settings": {
+          "header_img": "shopify:\/\/shop_images\/0000_Yoga.png",
+          "page_title": "One Bra for Every Adventure",
+          "page_subtitle": "",
+          "button_text": "Shop now",
+          "button_url": "shopify:\/\/pages\/shop",
+          "title_text": "It's All in the Details",
+          "features_list_1": "<p>Moisture-wicking and germ-fighting fabric<\/p>\n<p>Seamless cups&nbsp;<\/p>\n<p>V-neck front accommodates nearly any wardrobe&nbsp;<\/p>\n<p>Adjustable straps<\/p>",
+          "features_list_2": "<p>Slim bra design for forget-it's-there wear<\/p>\n<p>Several exciting patterns and classic colors to fit your style<\/p>\n<p>Tagless design for comfortable everyday wear<\/p>\n<p>Underwire-free<\/p>",
+          "designer_img": "",
+          "designer_name": "",
+          "designer_subtext": "Designer",
+          "bio": "<p>Our designer is a renowned apparel designer with over a decade of&nbsp;experience in sustainable sportswear. She launched her career at lululemon athletica where she designed for three different divisions during her career with the company. Are you familiar with lululemon classics the Free To Be Bra (Wild), Cozy Cuddle Up Jacket, or their legendary Black Friday Collection? Well, that was all her.<\/p>\n<p><\/p>\n<p>Since her days at lululemon, she has been providing&nbsp;apparel design, trend forecasting, and much more for brands like Outdoor Voices, FIGS, and of course, Ollie Gray&trade;.<\/p>"
+        }
+      },
+      "returns-template": {
+        "type": "returns-template",
+        "blocks": {
+          "1528936577525": {
+            "type": "accordion",
+            "settings": {
+              "title": "What is the return policy?",
+              "content": "<p>Returns and Exchanges happen. We try to make this process as seamless as possible for all our moms. If for any reason you are not happy with your purchase and choose to initiate a return, you may do so (using the provided return shipping label) within 30 days of receipt for a full refund, less original shipping and a $5 restock fee. It is important to note that the merchandise must be unused, in its original packaging and in resalable condition. *Please take note of the washing instructions for our bras on the provided packaging. Ollie Gray&trade; is not responsible for damaged merchandise that has not been cleaned according to our proposed instructions.<\/p>\n<p><\/p>\n<p>Remember:<\/p>\n<p>- The bra(s) must be in original condition, with all tags remaining in place.<\/p>\n<p>- The bra(s) must not have been worn, washed, or altered in any way.<\/p>\n<p>- Please try on your bra(s) after a shower, without lotions, creams, or other products on your skin, over a tight-fitting tank or other piece of clothing until you are certain you will not require a return.<\/p>\n<p>- For hygienic reasons, we cannot accept returns for bra(s) soiled with sweat, breast milk, deodorant, pet fur, etc.<\/p>\n<p>- Please avoid exposing your bra(s) to strong smells such as cigarette smoke, cooking odors, perfume, etc. until you are certain that you will not require a return, as bras that have been exposed to these odors are not resalable and will not be accepted for return.<\/p>\n<p>- Each bra will be evaluated for defects by our Quality Assurance Department. Any bra received that is not in its original condition (i.e. has sweat, breast milk, deodorant, pet fur, smells, etc.) will be returned back to you &ldquo;as is,&rdquo; without reimbursement.<\/p>\n<p>- Ollie Gray&trade; is not responsible for damage to bras that have not been laundered according to the care label instructions.<\/p>\n<p>- Your shipping charges are not eligible for a refund.<\/p>\n<p>- Gift\/e-cards are non-refundable.<\/p>"
+            }
+          },
+          "1528936602108": {
+            "type": "accordion",
+            "settings": {
+              "title": "Why the $5 restock fee?",
+              "content": "<p>To cover shipping and handling, a $5.00 restocking fee is deducted from all total return amounts as well as original shipping cost, but you will receive a return\/exchange shipping label and not be charged for shipment back to us. Please reach out to us via email for any sizing questions before ordering to avoid incorrect size selection.<\/p>"
+            }
+          },
+          "1528936628825": {
+            "type": "accordion",
+            "settings": {
+              "title": "What is the exchange policy?",
+              "content": "<p>If for any reason you need a different size or color and choose to initiate an exchange, you may do so within 30 days of receipt. A return shipping label will be provided upon meeting all requirements for an exchange. *Please take note of the washing instructions for our bras on the provided packaging. Ollie Gray&trade; is not responsible for damaged merchandise that has not been cleaned according to our proposed instructions.<\/p>\n<p><\/p>\n<p>Remember:<\/p>\n<p>- The bra(s) must be in original condition, with all tags remaining in place.<\/p>\n<p>- The bra(s) must not have been worn, washed, or altered in any way.<\/p>\n<p>- Please try on your bra(s) after a shower, without lotions, creams, or other products on your skin, over a tight-fitting tank or other piece of clothing until you are certain you will not require a return.<\/p>\n<p>- For hygienic reasons, we cannot accept returns for bra(s) soiled with sweat, breast milk, deodorant, pet fur, etc.<\/p>\n<p>- Please avoid exposing your bra(s) to strong smells such as cigarette smoke, cooking odors, perfume, etc. until you are certain that you will not require a return, as bras that have been exposed to these odors are not resalable and will not be accepted for return.<\/p>\n<p>- Each bra will be evaluated for defects by our Quality Assurance Department. Any bra received that is not in its original condition (i.e. has sweat, breast milk, deodorant, pet fur, smells, etc.) will be returned back to you &ldquo;as is,&rdquo; without reimbursement, and at your cost to ship back to you. If a customer refuses to pay shipping back to her on such products, these products will be destroyed after thirty (30) days. - - Ollie Gray&trade; is not responsible for damage to bras that have not been laundered according to the care label instructions.<\/p>\n<p>- Your shipping charges are not eligible for a refund.<\/p>\n<p>- Gift\/e-cards are non-refundable.<\/p>"
+            }
+          },
+          "1528936646565": {
+            "type": "accordion",
+            "settings": {
+              "title": "Are returns\/exchanges free?",
+              "content": "<p>A $5.00 restock fee is charged as well as original shipping on all Returns\/Exchanges. However, for exchanges, the post-return shipping back to you will be covered by Ollie Gray™.<\/p>"
+            }
+          },
+          "1528936669436": {
+            "type": "accordion",
+            "settings": {
+              "title": "How do I start my return or exchange?",
+              "content": "<p>Click the &ldquo;Make A Return Or Exchange&rdquo; button at the top of this page!<\/p>\n<p>Please note we are unable to be held liable for the loss of your products being returned or exchanged during shipping.<\/p>"
+            }
+          },
+          "1528936695166": {
+            "type": "accordion",
+            "settings": {
+              "title": "Where do I send my return or exchange?",
+              "content": "<p>We partner with a warehouse in South Carolina, in the United States, specifically chosen to facilitate all of our returns and exchanges.<\/p>\n<p>The return shipping label provided by our team will have a complete mailing address to our distribution center.<\/p>"
+            }
+          },
+          "1528936716036": {
+            "type": "accordion",
+            "settings": {
+              "title": "How long does it take for my refund\/exchange to be processed?",
+              "content": "<p>We try and process returns as quickly as possible.&nbsp;<\/p>\n<p>If you're exchanging, we will send your new piece(s) out, and email you a new tracking number within 1-2 business days of receiving your item(s) to exchange.<\/p>\n<p>If you're refunding, we will refund you through the same method you used to pay (Paypal or credit card) within 15 business days of receiving the refunded item to our warehouse.<\/p>"
+            }
+          },
+          "1528936744296": {
+            "type": "accordion",
+            "settings": {
+              "title": "What if my order arrives damaged or there is a defect?",
+              "content": "<p>While we hope this never happens, we&rsquo;re prepared and ready to help if it does. If you receive damaged goods, or have a manufacturing fault occur, please contact us immediately at info@OllieGrayBras.com so we can personally assist you and sort out your problem as quickly as possible.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1528936577525",
+          "1528936602108",
+          "1528936628825",
+          "1528936646565",
+          "1528936669436",
+          "1528936695166",
+          "1528936716036",
+          "1528936744296"
+        ],
+        "settings": {
+          "page_title": "Returns & Exchanges Happen",
+          "page_subtitle": "We try to make this process as seamless as possible",
+          "returns_text": "<p><strong>*IMPORTANT:<br><\/strong>If you receive damaged goods, or have a manufacturing fault occur, please contact us immediately at <a href=\"mailto:info@olliegraybras.com\" title=\"mailto:info@olliegraybras.com\">info@OllieGrayBras.com<\/a> so we can personally assist you and sort out your problem as quickly as possible. For all other returns or exchanges&nbsp;click the button below.<\/p>",
+          "returns_button": "https:\/\/olliegraybras.loopreturns.com\/#\/",
+          "button_text": "Make a return or Exchange"
+        }
+      },
+      "size-template": {
+        "type": "size-template",
+        "blocks": {
+          "1529011930335": {
+            "type": "select",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Size_Small_Stacey.jpg",
+              "layout": "left",
+              "model_name": "Stacey",
+              "bra_size": "34a",
+              "model_height": "5'7\"",
+              "wears_size": "small"
+            }
+          },
+          "1529014721674": {
+            "type": "select",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Size_Medium_Sally.jpg",
+              "layout": "right",
+              "model_name": "Sally",
+              "bra_size": "34c",
+              "model_height": "5'5\"",
+              "wears_size": "medium"
+            }
+          },
+          "1529014762176": {
+            "type": "select",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Size_Large_Elisabeth.jpg",
+              "layout": "left",
+              "model_name": "Elisabeth",
+              "bra_size": "34DD",
+              "model_height": "5'3\"",
+              "wears_size": "large"
+            }
+          }
+        },
+        "block_order": [
+          "1529011930335",
+          "1529014721674",
+          "1529014762176"
+        ],
+        "settings": {
+          "header_img": "",
+          "page_title": "3 Steps to a Perfect Fit",
+          "step_1_title": "Measure your band size",
+          "step_1_text": "<p>Stand in front of a large mirror wearing a non-padded bra. Wrap a soft measuring tape around your back at band level, and evenly around to the front band. Take a normal size breath, hold it in, and round to the nearest inch. We recommend rounding up for ultimate comfort.<\/p>",
+          "step_2_title": "Measure your bust size",
+          "step_2_text": "<p>Keeping the tape around your back at band level, measure around the fullest part of your bust. Take a slight breath in, to ensure the tape isn&rsquo;t too tight. This is your bust measurement. Round up to the nearest inch.&nbsp;<\/p>",
+          "step_3_title": "Plot your measurements on the chart",
+          "step_3_text": "<p>Find your band size along the top of the chart, and then match to your bust measurement on the left of the chart. This will give you your bra size (34C for example). Use the color of your bra size on the size chart and match it with the corresponding Ollie Gray&trade; Conversion color&mdash;ta dah, you&rsquo;ve found your equivalent size! For example, 34C (teal) = M (teal).<\/p>",
+          "section_title": "Bra Size Chart",
+          "size_chart": "",
+          "section_title2": "Ollie Gray<sup>™<\/sup> Conversion"
+        }
+      },
+      "contact-template": {
+        "type": "contact-template",
+        "settings": {
+          "header_img": "",
+          "page_title": "Questions? Concerns? Kudos?",
+          "page_subtitle": "We'd Love to hear from you!"
+        }
+      },
+      "shop-template": {
+        "type": "shop-template",
+        "settings": {
+          "header_img": "shopify:\/\/shop_images\/Rectangle_2.png",
+          "collection1": "prints",
+          "collection2": "solids",
+          "collection3": "extras",
+          "collection_products_grid": "grid",
+          "collection_tags_enable": false,
+          "product_vendor_enable": false
+        }
+      },
+      "fitness-template": {
+        "type": "fitness-template",
+        "settings": {
+          "header_img": "shopify:\/\/shop_images\/Banner-Image.jpg",
+          "page_title": "Fitness for Mommy",
+          "page_subtitle": "A VIDEO WORKOUT SERIES BY EMILY BREEZE"
+        }
+      },
+      "anchor-links": {
+        "type": "anchor-links",
+        "blocks": {
+          "1529421089609": {
+            "type": "anchor-link",
+            "settings": {
+              "anchorlink-url": "#arms",
+              "anchorlink-image": "shopify:\/\/shop_images\/Arms_558bbb8e-a2be-4319-8735-bb1a9930753a.png"
+            }
+          },
+          "1529421119219": {
+            "type": "anchor-link",
+            "settings": {
+              "anchorlink-url": "#legs",
+              "anchorlink-image": "shopify:\/\/shop_images\/Legs.png"
+            }
+          },
+          "1529421131358": {
+            "type": "anchor-link",
+            "settings": {
+              "anchorlink-url": "#core",
+              "anchorlink-image": "shopify:\/\/shop_images\/core.png"
+            }
+          },
+          "1529421141594": {
+            "type": "anchor-link",
+            "settings": {
+              "anchorlink-url": "#full-body",
+              "anchorlink-image": "shopify:\/\/shop_images\/Full.png"
+            }
+          }
+        },
+        "block_order": [
+          "1529421089609",
+          "1529421119219",
+          "1529421131358",
+          "1529421141594"
+        ],
+        "settings": {
+          "anchor-title": "Workouts"
+        }
+      },
+      "video-grid": {
+        "type": "video-grid",
+        "blocks": {
+          "1529422464067": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=CuuRkNbfQbo&list=PL3hrrXe2OwUMpzyr2el8mozKfKO4p9Hvz&index=1",
+              "width": "33%"
+            }
+          },
+          "1529507542695": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=E5-LD3AsYJE&index=2&list=PL3hrrXe2OwUMpzyr2el8mozKfKO4p9Hvz",
+              "width": "33%"
+            }
+          },
+          "1529507562409": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=DSjQYVT6mXQ&index=8&list=PL3hrrXe2OwUMpzyr2el8mozKfKO4p9Hvz",
+              "width": "33%"
+            }
+          },
+          "1529507587339": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=1s1O-3vKO28&list=PL3hrrXe2OwUMpzyr2el8mozKfKO4p9Hvz&index=10",
+              "width": "33%"
+            }
+          },
+          "1529507606353": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=x8fSXfMm9kE&list=PL3hrrXe2OwUMpzyr2el8mozKfKO4p9Hvz&index=13",
+              "width": "33%"
+            }
+          },
+          "1529507623668": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=piWoImgL9iw&index=14&list=PL3hrrXe2OwUMpzyr2el8mozKfKO4p9Hvz",
+              "width": "33%"
+            }
+          }
+        },
+        "block_order": [
+          "1529422464067",
+          "1529507542695",
+          "1529507562409",
+          "1529507587339",
+          "1529507606353",
+          "1529507623668"
+        ],
+        "settings": {
+          "title": "Workouts - Arms",
+          "anchor-tag": "arms"
+        }
+      },
+      "video-grid-2": {
+        "type": "video-grid-2",
+        "blocks": {
+          "1529507686802": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=vZRZh18AfpI&index=6&list=PL3hrrXe2OwUMpzyr2el8mozKfKO4p9Hvz",
+              "width": "33%"
+            }
+          },
+          "1529507696177": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/youtu.be\/dRxznAobEHc",
+              "width": "33%"
+            }
+          },
+          "1529507763262": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/youtu.be\/aP5WY0KsqM4",
+              "width": "33%"
+            }
+          },
+          "1529507785186": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=iImp-Y_Lu2g&index=18&list=PL3hrrXe2OwUMpzyr2el8mozKfKO4p9Hvz",
+              "width": "33%"
+            }
+          },
+          "1529507804828": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=JYnWqMmfESk&index=5&list=PL3hrrXe2OwUMpzyr2el8mozKfKO4p9Hvz",
+              "width": "33%"
+            }
+          },
+          "1529507855916": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=19vVEJ2wpDY&index=17&list=PL3hrrXe2OwUMpzyr2el8mozKfKO4p9Hvz",
+              "width": "33%"
+            }
+          }
+        },
+        "block_order": [
+          "1529507686802",
+          "1529507696177",
+          "1529507763262",
+          "1529507785186",
+          "1529507804828",
+          "1529507855916"
+        ],
+        "settings": {
+          "title": "Workouts - Legs",
+          "anchor-tag": "legs"
+        }
+      },
+      "video-grid-3": {
+        "type": "video-grid-3",
+        "blocks": {
+          "1529507919202": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=6tfvKS6oNLQ&list=PL3hrrXe2OwUMpzyr2el8mozKfKO4p9Hvz&index=3",
+              "width": "33%"
+            }
+          },
+          "1529507940561": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=KRjyITVbA48&index=9&list=PL3hrrXe2OwUMpzyr2el8mozKfKO4p9Hvz",
+              "width": "33%"
+            }
+          },
+          "1529507966484": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/youtu.be\/4OLy8jFslZU",
+              "width": "33%"
+            }
+          },
+          "1529507984346": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/youtu.be\/BqB5GLUoW80",
+              "width": "33%"
+            }
+          },
+          "1529508000976": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/youtu.be\/3gUg-DSF7LE",
+              "width": "33%"
+            }
+          },
+          "1529508017309": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/youtu.be\/91Gdn2Mm7Q4",
+              "width": "33%"
+            }
+          }
+        },
+        "block_order": [
+          "1529507919202",
+          "1529507940561",
+          "1529507966484",
+          "1529507984346",
+          "1529508000976",
+          "1529508017309"
+        ],
+        "settings": {
+          "title": "Workouts - Core",
+          "anchor-tag": "core"
+        }
+      },
+      "video-grid-4": {
+        "type": "video-grid-4",
+        "blocks": {
+          "1529508099787": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=UysJIK0trdk&index=4&list=PL3hrrXe2OwUMpzyr2el8mozKfKO4p9Hvz",
+              "width": "33%"
+            }
+          },
+          "1529508119900": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=-O7jZwgJlGE&index=11&list=PL3hrrXe2OwUMpzyr2el8mozKfKO4p9Hvz",
+              "width": "33%"
+            }
+          },
+          "1529508137260": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=vLyCk60TZL0&list=PL3hrrXe2OwUMpzyr2el8mozKfKO4p9Hvz&index=12",
+              "width": "33%"
+            }
+          },
+          "1529508156928": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=zzX014T143w&list=PL3hrrXe2OwUMpzyr2el8mozKfKO4p9Hvz&index=15",
+              "width": "33%"
+            }
+          },
+          "1529508282271": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=RAzRIRTv9rI&list=PL3hrrXe2OwUMpzyr2el8mozKfKO4p9Hvz&index=16",
+              "width": "33%"
+            }
+          },
+          "1529508314852": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/youtu.be\/VCcT9AcmZ2s",
+              "width": "33%"
+            }
+          }
+        },
+        "block_order": [
+          "1529508099787",
+          "1529508119900",
+          "1529508137260",
+          "1529508156928",
+          "1529508282271",
+          "1529508314852"
+        ],
+        "settings": {
+          "title": "Workouts - full body",
+          "anchor-tag": "full-body"
+        }
+      },
+      "alert-bar": {
+        "type": "alert-bar",
+        "settings": {
+          "bg_color": "#434444",
+          "alert-text": "Enjoy free shipping on orders over $100!",
+          "page_select": "",
+          "close-btn": true
+        }
+      }
+    },
+    "content_for_index": [
+      "1482264207455",
+      "1528746752785",
+      "1528755015918",
+      "1528755181426",
+      "1528215476243"
+    ]
+  },
+  "presets": {
+    "Brooklyn": {
+      "cart_type": "drawer",
+      "cart_notes_enable": false,
+      "checkout_accent_color": "#a26b25",
+      "checkout_banner_background_color": "#fff",
+      "checkout_button_color": "#000000",
+      "checkout_call_to_action_color": "#a26b25",
+      "checkout_use_header_image": false,
+      "collection_products_grid": "collage",
+      "collection_sort_enable": false,
+      "collection_tags_enable": true,
+      "color_body_bg": "#ffffff",
+      "color_body_text": "#1c1d1d",
+      "color_borders": "#1c1d1d",
+      "color_drawer_background": "#1c1d1d",
+      "color_drawer_border": "#343535",
+      "color_drawer_button": "#a26b25",
+      "color_drawer_button_text": "#ffffff",
+      "color_drawer_text": "#ffffff",
+      "color_input": "#f6f6f6",
+      "color_newsletter": "#f6f6f6",
+      "color_primary": "#1c1d1d",
+      "color_product_background": "#f7f7f7",
+      "color_sale_tag": "#990000",
+      "color_secondary": "#a26b25",
+      "customer_layout": "customer_area",
+      "favicon_enable": false,
+      "footer_newsletter_enable": true,
+      "footer_quicklinks_enable": true,
+      "header_search_enable": false,
+      "hero_home_auto": true,
+      "home_featured_collections_sort": "auto",
+      "home_featured_products_grid": "collage",
+      "home_hero_auto_speed": "7000",
+      "product_vendor_enable": false,
+      "product_zoom_enable": true,
+      "share_facebook": true,
+      "share_pinterest": true,
+      "share_twitter": true,
+      "social_sharing_style": "clean",
+      "type_accent_family": "Google_Montserrat_400_sans",
+      "type_accent_spacing": true,
+      "type_accent_transform": true,
+      "type_base_family": "Google_Arapey_400_serif",
+      "type_base_italize_titles": true,
+      "type_base_size": "16px",
+      "type_header_base_size": "30px",
+      "type_header_border_thickness": "1px",
+      "type_header_family": "Google_Old+Standard+TT_400_serif",
+      "sections": {
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "slide",
+              "settings": {}
+            },
+            "slideshow-1": {
+              "type": "slide",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "slideshow-1"
+          ],
+          "settings": {}
+        },
+        "featured-products": {
+          "type": "featured-products",
+          "settings": {
+            "home_featured_products": "frontpage"
+          }
+        },
+        "featured-content": {
+          "type": "featured-content",
+          "blocks": {
+            "featured-content-0": {
+              "type": "text",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "featured-content-0"
+          ],
+          "settings": {}
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collections-0": {
+              "type": "collection",
+              "settings": {}
+            },
+            "featured-collections-1": {
+              "type": "collection",
+              "settings": {}
+            },
+            "featured-collections-2": {
+              "type": "collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "featured-collections-0",
+            "featured-collections-1",
+            "featured-collections-2"
+          ],
+          "settings": {}
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "featured-content",
+        "featured-collections",
+        "featured-products",
+        "newsletter"
+      ]
+    }
+  }
+}

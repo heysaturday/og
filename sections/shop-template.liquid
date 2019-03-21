@@ -1,0 +1,72 @@
+
+{% if section.settings.header_img %}
+<div style="padding-bottom:20px;">
+                  <img src="{{  section.settings.header_img | img_url: '996x' | format: 'jpg' }}">
+                </div>
+{% endif %}
+{% for product in collections.prints.products %}
+<div id="CollectionSection" data-section-id="{{ section.id }}" data-section-type="collection-template" data-grid-type="{{ section.settings.collection_products_grid }}">
+  {% include 'collection-template' %}
+</div>
+{% endfor %}
+<div id="CollectionSection" data-section-id="{{ section.settings.collection2.id }}" data-section-type="collection-template" data-grid-type="{{ section.settings.collection_products_grid }}">
+  {% include 'collection-template' %}
+</div>
+<div id="CollectionSection" data-section-id="{{ section.settings.collection3.id }}" data-section-type="collection-template" data-grid-type="{{ section.settings.collection_products_grid }}">
+  {% include 'collection-template' %}
+</div>
+
+{% schema %}
+  {
+    "name": "Collection pages",
+    "settings": [
+      	  {
+		"type": "image_picker",
+		"id": "header_img",
+		"label": "Header Image"
+	  		},
+		  {
+			"type": "collection",
+			"id": "collection1",
+			"label": "Collection 1"
+		  },
+		  {
+			"type": "collection",
+			"id": "collection2",
+			"label": "Collection 2"
+		  },
+		  {
+			"type": "collection",
+			"id": "collection3",
+			"label": "Collection 3"
+		  },
+		  
+	  	  {
+        "type": "select",
+        "id": "collection_products_grid",
+        "label": "Grid style",
+        "options": [
+          {
+            "value": "collage",
+            "label": "Collage"
+          },
+          {
+            "value": "grid",
+            "label": "Grid"
+          }
+        ]
+      },
+	
+      {
+        "type": "checkbox",
+        "id": "collection_tags_enable",
+        "label": "Show collection tags"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_vendor_enable",
+        "label": "Show product vendor"
+      }
+    ]
+  }
+{% endschema %}

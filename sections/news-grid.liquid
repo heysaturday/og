@@ -1,0 +1,80 @@
+<div class="grid">
+  
+  <div class="grid__item large--one-whole">
+
+    <header class="section-header text-center">
+      <div style="padding-bottom:20px;">
+                  <img src="{{  section.settings.header_img | img_url: '996x' | format: 'jpg' }}">
+                </div>
+      {% unless settings.page_title == blank %}
+      <div style="margin-top:30px;" class="page_title">{{ section.settings.page_title }}</div>
+      <span class="page_subtitle">{{ section.settings.page_subtitle }}</span>
+      {% endunless %}
+      
+    </header> 
+
+    <div class="grid">
+      <div class="grid__item large--one-whole">
+        <div class="flex-grid">
+          {% for block in section.blocks %}
+			<div class="white-box">
+              <img src="{{ block.settings.logo | img_url }}"/>
+              <div class="preview_text">{{ block.settings.preview }}</div>
+              <div class="credit_text">{{ block.settings.credit }}</div>
+            </div>
+		  {% endfor %}
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Page Settings",
+    "settings": [
+      {
+		"type": "image_picker",
+		"id": "header_img",
+		"label": "Header Image"
+	  },
+	  {
+        "type": "text",
+        "id": "page_title",
+        "label": "Page Title"
+        
+      },
+	  {
+		"type": "text",
+		"id": "page_subtitle",
+		"label": "Page Subtitle"
+	  }
+	  
+    ],
+	"blocks":[
+	  {
+		"name": "Press Links",
+		"type": "select",
+		"settings": [
+		  {
+			"type": "image_picker",
+			"id": "logo",
+			"label": "Logo"
+		  },
+		  {
+			"type": "textarea",
+			"id": "preview",
+			"label": "Preview Text"
+		  },
+		  {
+			"type": "text",
+			"id": "credit",
+			"label": "Credit"
+		  }
+		]
+	  }
+	]
+  }
+{% endschema %}

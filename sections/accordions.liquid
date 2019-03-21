@@ -1,0 +1,61 @@
+{% for block in section.blocks %}
+
+<button class="accordion"><div class="dropdown-title">{{ block.settings.title }}</div><span id="dpi" class="open-icon"></span></button>
+<div class="panel">
+  
+  <p>{{ block.settings.content }}</p>
+</div>
+
+{% endfor %}
+
+
+
+{% schema %}
+
+{
+    "name": "Accordions",
+    "max_blocks": 15,
+	"blocks":
+	[
+      {
+        "type": "accordion",
+        "name": "accordion",
+        "settings": [
+          {
+            "id": "title",
+            "type": "text",
+            "label": "Title"
+          },
+		{
+			"id": "content",
+			"type": "richtext",
+			"label": "content"
+		}
+        ]
+      }
+    ]
+  }
+
+
+{% endschema %}
+
+{% stylesheet %}
+
+
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+      	document.getElementById("dpi").classList.toggle("show");
+  }
+}
+</script>

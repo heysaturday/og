@@ -1,0 +1,221 @@
+<div class="grid">
+  
+  <div class="grid__item large--one-whole">
+
+    <header class="text-center">
+      <div style="padding-bottom:20px;">
+                  <img src="{{  section.settings.header_img | img_url: '996x' | format: 'jpg' }}">
+                </div>
+      {% unless section.settings.page_title == blank %}
+      <div style="margin-top:30px;" class="page_title">{{ section.settings.page_title }}</div>
+      <span class="page_subtitle">{{ section.settings.page_subtitle }}</span>
+      {% endunless %}
+      
+    </header>
+    
+     <div class="grid">
+      <div class="grid__item large--four-fifths push--large--one-tenth">
+        <div class="rte rte--nomargin rte--indented-images">
+          {{ page.content }}
+        </div>
+      </div>
+    </div>
+
+   </div>
+
+   
+
+  </div>
+
+<div class="wrapper">
+  {% if section.settings.button_text != blank %}
+  <div style="margin:30px auto;" class="align-center">  
+  <a class="btn" href="{{ section.settings.button_url }}" target="_blank">{{ section.settings.button_text }}</a>
+    </div>
+  {% endif %}
+  <div class="product_features_section_title">{{ section.settings.title_text }}</div>
+  {% for block in section.blocks %} 
+  <div class="page-width feature-row">
+    {% capture image_layout %}
+      <div class="feature-row__item">
+        {% if block.settings.image != blank %}
+          {{ block.settings.image | img_url: '600x600' | img_tag: block.settings.image.alt, 'feature-row__image' }}
+        {% else %}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+      </div>
+    {% endcapture %}
+
+    <div class="feature-row product_features_row">
+      {% if block.settings.layout == 'left' %}
+        {{ image_layout }}
+      {% endif %}
+
+      <div class="product_features_item feature-row__item feature-row__text feature-row__text--{{ block.settings.layout }} ">
+        {% if block.settings.title != blank %}
+          <h2 class="product_features_title">{{ block.settings.title | escape }}</h2>
+        {% endif %}
+        {% if block.settings.text != blank %}
+          <div class="rte-setting featured-row__subtext product_features_subtext">{{ block.settings.text }}</div>
+        {% endif %}
+        {% if block.settings.button_label != blank and block.settings.button_link != blank %}
+          <a href="{{ block.settings.button_link }}" class="btn">
+            {{ block.settings.button_label }}
+          </a>
+        {% endif %}
+      </div>
+
+      {% if block.settings.layout == 'right' %}
+        {{ image_layout }}
+      {% endif %}
+    </div>
+  </div>
+  <div class="product_features_row_divider"></div>
+  {% endfor %}
+</div>
+<div class="features_wrapper">
+  <div class="grid">
+    <div class="grid__item large--one-half small--one-whole">
+  {{ section.settings.features_list_1 }}
+    </div>
+  <div class="grid__item large--one-half small--one-whole">
+  {{ section.settings.features_list_2 }}
+    </div></div>
+</div>
+<hr class="og" style="padding-top:20px;">
+  <div class="product_features_section_title no_border">Athleisure inspired,<br>artfully designed.</div>
+  
+      <div class="designer_bio_section">
+        
+        {%if section.settings.designer_img %}
+        <img src="{{ section.settings.designer_img |img_url: '990x' }}"/>
+        {% endif %}
+        <div class="designer_name">{{ section.settings.designer_name }}</div>
+        <div class="designer_subtext">{{ section.settings.designer_subtext }}</div>
+        <div class="designer_bio">{{ section.settings.bio }}</div>
+       
+      </div>
+    
+
+{% schema %}
+  {
+    "name": "Page Settings",
+	"settings": [
+      {
+		"type": "image_picker",
+		"id": "header_img",
+		"label": "Header Image"
+	  },
+	  {
+        "type": "text",
+        "id": "page_title",
+        "label": "Page Title"
+        
+      },
+	  {
+		"type": "text",
+		"id": "page_subtitle",
+		"label": "Page Subtitle"
+	  },
+	  {
+		"type": "text",
+		"id": "button_text",
+		"label": "Button Text"
+	  },
+	  {
+		"type": "url",
+		"id": "button_url",
+		"label": "Button URL"
+	  },
+	  {
+		"type": "text",
+		"id": "title_text",
+		"label": "Section Title"
+	  },
+  	  {
+  		"type": "richtext",
+  		"id": "features_list_1",
+  		"label": "Features List Column 1",
+		"info": "Create a new line for each new item"
+  	  },
+	  {
+  		"type": "richtext",
+  		"id": "features_list_2",
+  		"label": "Features List Column 2",
+		"info": "Create a new line for each new item"
+  	  },
+  	  {
+  		"type": "image_picker",
+  		"id": "designer_img",
+  		"label": "Designer Headshot"
+  	  },
+  	  {
+  		"type": "text",
+  		"id": "designer_name",
+  		"label": "Designer Name"
+  	  },
+  	  {
+  		"type": "text",
+  		"id": "designer_subtext",
+  		"label": "Designer Title"
+  	  },
+  	  {
+  		"type": "richtext",
+  		"id": "bio",
+  		"label": "Bio"
+  	  }
+	  
+    ],
+    "blocks":[
+	  {
+		"type": "select",
+      	"name": "Product Feature",
+		"settings": [
+      {
+        "type": "image_picker",
+        	"id": "image",
+        	"label": "Image"
+      },
+      {
+        "type": "select",
+        "id": "layout",
+        "label": "Layout",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "Image on left"
+          },
+          {
+            "value": "right",
+            "label": "Image on right"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Image with text"
+      },
+      {
+        "type": "richtext",
+       	"id": "text",
+       	"label": "Text",
+       	"default": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      }
+	]
+   }
+   ]
+  }
+{% endschema %}

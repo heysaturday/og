@@ -1,0 +1,54 @@
+<div class="grid">
+  
+  <div class="grid__item large--one-whole">
+
+    <header class="text-center">
+      {%if section.settings.header_img %}
+      <div style="padding-bottom:20px;">
+                  <img src="{{  section.settings.header_img | img_url: '996x' | format: 'jpg' }}">
+                </div>
+      {% endif %}
+      {% unless section.settings.page_title == blank %}
+      <div style="margin-top:30px;" class="page_title">{{ section.settings.page_title }}</div>
+      <span class="page_subtitle">{{ section.settings.page_subtitle }}</span>
+      {% endunless %}
+      
+    </header>
+    
+     <div style="max-width:786px; margin:auto; text-align:center;">
+        <div id="story" class="rte rte--nomargin">
+          {{ page.content }}
+        </div>
+      </div>
+    </div>
+
+   </div>
+
+ 
+
+
+{% schema %}
+  {
+    "name": "Page Settings",
+    "settings": [
+      {
+		"type": "image_picker",
+		"id": "header_img",
+		"label": "Header Image"
+	  },
+	  {
+        "type": "text",
+        "id": "page_title",
+        "label": "Page Title"
+        
+      },
+	  {
+		"type": "text",
+		"id": "page_subtitle",
+		"label": "Page Subtitle"
+	  }
+	  
+    ]
+	
+  }
+{% endschema %}

@@ -1,0 +1,49 @@
+{% for block in section.blocks %}
+  {% if block.settings.type == 'video_url' %}
+    <div class="video-wrapper">
+            {% if block.settings.video_url == blank %}
+              <iframe src="//www.youtube.com/embed/_9VUPq3SxOc?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+            {% else %}
+              {% if block.settings.video_url.type == "youtube" %}
+                <iframe src="//www.youtube.com/embed/{{ block.settings.video_url.id }}?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+              {% endif %}
+              {% if block.settings.video_url.type == "vimeo" %}
+                <iframe src="//player.vimeo.com/video/{{ block.settings.video_url.id }}?color={{ settings.color_secondary | remove: "#" }}&byline=0&portrait=0&badge=0" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+              {% endif %}
+            {% endif %}
+            </div>
+  {% elsif block.settings.type == 'image_picker' %}
+    <img src="{{block.settings.image | img_url}}"/>
+  {% endif %}
+{% endfor %}
+
+{% schema %}
+  {
+    "blocks": [
+      {
+        "type": "media",
+        "name": "Media Blocks",
+        "settings": [
+          {
+   "id": "video_url",
+   "type": "video_url",
+   "label": "Video Section",
+   "accept": ["youtube", "vimeo"],
+   "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+		  },
+		  {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image Section"
+    	  }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

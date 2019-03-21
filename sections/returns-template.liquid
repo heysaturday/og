@@ -1,0 +1,111 @@
+<div class="grid">
+  
+  <div class="grid__item large--one-whole">
+
+    <header class="section-header text-center">
+      <div style="margin-top:40px;" class="page_title">{{ section.settings.page_title }}</div>
+      <span class="page_subtitle">{{ section.settings.page_subtitle }}</span>
+      <div style="margin: 20px auto 0" class="align-center">
+       {{ section.settings.returns_text }}
+    </div> 
+    </header>
+    <div style="margin-bottom:30px;" class="align-center">
+       <a class="btn" href="{{ section.settings.returns_button }}" target="_blank">{{ section.settings.button_text }}</a>
+    </div>
+    
+     
+
+   </div>
+
+   
+
+  </div>
+<div id="shopify-section-accordions">
+{% for block in section.blocks %}
+
+<button class="accordion"><div class="dropdown-title">{{ block.settings.title }}</div><span id="dpi" class="open-icon"></span></button>
+<div class="panel">
+  
+  <p>{{ block.settings.content }}</p>
+</div>
+
+{% endfor %}
+</div>
+
+
+{% schema %}
+
+{
+    "name": "Page Settings",
+    "max_blocks": 15,
+	"settings": [
+	  {
+        "type": "text",
+        "id": "page_title",
+        "label": "Page Title"
+        
+      },
+	  {
+		"type": "text",
+		"id": "page_subtitle",
+		"label": "Page Subtitle"
+	  },
+	  {
+		"type": "richtext",
+		"id": "returns_text",
+		"label": "Returns Text"
+	  },
+	  {
+		"type": "url",
+		"id": "returns_button",
+		"label": "Returns URL"
+	  },
+	  {
+		"type": "text",
+		"id": "button_text",
+		"label": "button_text"
+	  }
+	],
+	"blocks":
+	[
+      {
+        "type": "accordion",
+        "name": "accordion",
+        "settings": [
+          {
+            "id": "title",
+            "type": "text",
+            "label": "Title"
+          },
+		{
+			"id": "content",
+			"type": "richtext",
+			"label": "content"
+		}
+        ]
+      }
+    ]
+  }
+
+
+{% endschema %}
+
+{% stylesheet %}
+
+
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+      	document.getElementById("dpi").classList.toggle("show");
+  }
+}
+</script>

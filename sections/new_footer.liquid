@@ -1,0 +1,263 @@
+<footer class="site-footer small--text-center" role="contentinfo">
+  <div class="wrapper new_footer">
+    <div class="footer_email_block">
+      <h2 style="font-size: 26px; font-weight:100; font-style:italic; text-transform:none; font-variant-ligatures: no-common-ligatures;">Be the first to know</h2>
+      <span style="font-weight:700;">Sign up to get news on product launches, dibs on new arrivals, updates on exclusive events, and more.</span><br>
+ 
+      </div>
+<!-- Begin MailChimp Signup Form -->
+
+
+<div id="mc_embed_signup">
+<form action="https://olliegraybras.us18.list-manage.com/subscribe/post?u=8037e1c8f479e16027738ba9c&amp;id=05212e1454" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<div class="form-flex">
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8037e1c8f479e16027738ba9c_05212e1454" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="get on the list" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+      </div></div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+    
+    
+
+    <div class="grid-uniform">
+
+      {% assign num_footer_columns = 4 %}
+
+     
+      {% comment %}
+        Determine whether there are social links
+      {% endcomment %}
+      {% assign footer_social_enable = false %}
+      {% if
+        settings.social_twitter_link != blank
+        or settings.social_facebook_link != blank
+        or settings.social_pinterest_link != blank
+        or settings.social_google_plus_link != blank
+        or settings.social_instagram_link != blank
+        or settings.social_tumblr_link != blank
+        or settings.social_youtube_link != blank
+        or settings.social_vimeo_link != blank
+        or settings.social_fancy_link != blank
+        or settings.social_snapchat_link != blank
+      %}
+        {% assign footer_social_enable = true %}
+      {% endif %}
+
+
+      
+         
+     {% assign footer_column_width = 'one-quarter small--one-whole' %}
+      
+
+    
+        <div class="grid__item {{ footer_column_width }}">
+      	  {% for block in section.blocks %}
+  {% if block.type == 'block-1' %}
+    <ul class="no-bullets site-footer__linklist"><a href="{{block.settings.url}}">{{block.settings.link_title}}</a></ul>
+  {% endif %}
+{% endfor %}
+        </div>
+      <div class="grid__item {{ footer_column_width }}">
+      	  {% for block in section.blocks %}
+  {% if block.type == 'block-2' %}
+    <ul class="no-bullets site-footer__linklist"><a href="{{block.settings.url}}">{{block.settings.link_title}}</a></ul>
+  {% endif %}
+{% endfor %}
+        </div>
+      <div class="grid__item {{ footer_column_width }}">
+      	  {% for block in section.blocks %}
+  {% if block.type == 'block-3' %}
+        <ul class="no-bullets site-footer__linklist"><a href="{{block.settings.url}}">{{block.settings.link_title}}</a></ul>
+  {% endif %}
+{% endfor %}
+        </div>
+        
+
+      <div class="grid__item {{ footer_column_width }} large--text-right">
+       
+        {% unless shop.enabled_payment_types == empty %}
+          {% assign payment_icons_available = 'amazon_payments,american_express,apple_pay,bitcoin,cirrus,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,jcb,litecoin,maestro,master,paypal,visa' | split: ',' %}
+          <ul class="inline-list payment-icons">
+            {% for type in shop.enabled_payment_types %}
+              {% if payment_icons_available contains type %}
+                <li>
+                  <span class="icon-fallback-text">
+                    <span class="icon icon-{{ type }}" aria-hidden="true"></span>
+                    <span class="fallback-text">{{ type | replace: '_',' ' }}</span>
+                  </span>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% endunless %}
+      
+      </div>
+    </div>
+
+  </div>
+  {% if footer_social_enable %}
+        
+            <ul class="no-bullets social-icons">
+              {% if settings.social_facebook_link != blank %}
+                <li>
+                  <a href="{{ settings.social_facebook_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Facebook' }}" target="_blank">
+                    <span class="icon icon-facebook" aria-hidden="true"></span>
+                  </a>
+                </li>
+              {% endif %}
+              {% if settings.social_twitter_link != blank %}
+                <li>
+                  <a href="{{ settings.social_twitter_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Twitter' }}" target="_blank">
+                    <span class="icon icon-twitter" aria-hidden="true"></span>
+                  </a>
+                </li>
+              {% endif %}
+              {% if settings.social_pinterest_link != blank %}
+                <li>
+                  <a href="{{ settings.social_pinterest_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Pinterest' }}" target="_blank">
+                    <span class="icon icon-pinterest" aria-hidden="true"></span>
+                  </a>
+                </li>
+              {% endif %}
+              {% if settings.social_instagram_link != blank %}
+                <li>
+                  <a href="{{ settings.social_instagram_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Instagram' }}" target="_blank">
+                    <span class="icon icon-instagram" aria-hidden="true"></span>
+                  </a>
+                </li>
+              {% endif %}
+              {% if settings.social_snapchat_link != blank %}
+                <li>
+                  <a href="{{ settings.social_snapchat_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Snapchat' }}">
+                    <span class="icon icon-snapchat" aria-hidden="true"></span>
+                    Snapchat
+                  </a>
+                </li>
+              {% endif %}
+              {% if settings.social_google_plus_link != blank %}
+                <li>
+                  <a href="{{ settings.social_google_plus_link }}" rel="publisher" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Google Plus' }}">
+                    <span class="icon icon-google_plus" aria-hidden="true"></span>
+                    Google Plus
+                  </a>
+                </li>
+              {% endif %}
+              {% if settings.social_tumblr_link != blank %}
+                <li>
+                  <a href="{{ settings.social_tumblr_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Tumblr' }}">
+                    <span class="icon icon-tumblr" aria-hidden="true"></span>
+                    Tumblr
+                  </a>
+                </li>
+              {% endif %}
+              {% if settings.social_youtube_link != blank %}
+                <li>
+                  <a href="{{ settings.social_youtube_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'YouTube' }}">
+                    <span class="icon icon-youtube" aria-hidden="true"></span>
+                    YouTube
+                  </a>
+                </li>
+              {% endif %}
+              {% if settings.social_vimeo_link != blank %}
+                <li>
+                  <a href="{{ settings.social_vimeo_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Vimeo' }}">
+                    <span class="icon icon-vimeo" aria-hidden="true"></span>
+                    Vimeo
+                  </a>
+                </li>
+              {% endif %}
+              {% if settings.social_fancy_link != blank %}
+                <li>
+                  <a href="{{ settings.social_fancy_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Fancy' }}">
+                    <span class="icon icon-fancy" aria-hidden="true"></span>
+                    Fancy
+                  </a>
+                </li>
+              {% endif %}
+            </ul>
+        
+      {% endif %}
+  <div class="copy_footer_bar">
+    <div class="copy_footer_flex">
+      <div>&copy; {{ 'now' | date: '%Y' }}, {{ section.settings.business_name }}<sup>™</sup>
+      </div>
+      <div>
+        <a style="color:#fff; margin-right:5px;" href="/terms">Terms of Use</a>
+        <a style="color:#fff; margin-right:5px;" href="/terms">Privacy Policy</a>
+        <a style="color:#fff; margin-right:5px;" href="/terms">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+  
+</footer>
+
+
+  {% schema %}
+  {
+    "name": "Footer Menu",
+	"settings": [
+		{
+			"type": "text",
+			"id": "business_name",
+			"label": "Business Name",
+			"default": "Ollie Gray Bras"
+		}
+],
+    "blocks":[
+      {
+        "type": "block-1",
+        "name": "Column 1",
+        "settings": [
+		  {
+			"type": "text",
+			"id": "link_title",
+			"label": "Menu Item Title"
+		  },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "Menu Link"
+          }
+        ]
+      },
+      {
+        "type": "block-2",
+        "name": "Column 2",
+        "settings": [
+		  {
+			"type": "text",
+			"id": "link_title",
+			"label": "Menu Item Title"
+		  },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "Menu Link"
+          }
+        ]
+      },
+	  {
+        "type": "block-3",
+        "name": "Column 3",
+        "settings": [
+		  {
+			"type": "text",
+			"id": "link_title",
+			"label": "Menu Item Title"
+		  },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "Menu Link"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+

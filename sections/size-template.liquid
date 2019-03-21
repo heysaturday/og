@@ -1,0 +1,252 @@
+<div class="grid">
+  
+  <div class="grid__item large--one-whole">
+
+   
+    <header class="text-center">
+       {% if section.settings.header_img %}
+      <div style="padding-bottom:20px;">
+                  <img src="{{  section.settings.header_img | img_url: '996x' | format: 'jpg' }}">
+                </div>
+       {% endif %}
+      {% unless section.settings.page_title == blank %}
+      <div {% if section.settings.header_img %}style="margin-top:30px;"{% endif %} class="page_title">{{ section.settings.page_title }}</div>
+      <span class="page_subtitle">{{ section.settings.page_subtitle }}</span>
+      {% endunless %}
+      
+    </header>
+   
+     <div style="max-width:786px; margin:auto; text-align:center;">
+        <div id="story" class="rte rte--nomargin">
+          {{ page.content }}
+        </div>
+      </div>
+    </div>
+
+   </div>
+
+<div class="center-contain small">
+  <div class="step_div one">
+    <span class="step_title">{{ section.settings.step_1_title }}</span>
+    <span class="step_text">{{ section.settings.step_1_text }}</span>
+  </div>
+  <div class="step_div two">
+    <span class="step_title">{{ section.settings.step_2_title }}</span>
+    <span class="step_text">{{ section.settings.step_2_text }}</span>
+  </div>
+  <div class="step_div three">
+    <span class="step_title">{{ section.settings.step_3_title }}</span>
+    <span class="step_text">{{ section.settings.step_3_text }}</span>
+  </div>
+  
+</div>
+<hr class="space50">
+
+<div class="product_features_section_title no_border">{{ section.settings.section_title }}</div>
+
+<div style="text-center padding-bottom:20px;">
+                 {% if section.settings.size_chart %} <img src="{{  section.settings.size_chart | img_url: '996x' | format: 'jpg' }}"> {% else %}
+  					<img src="https://cdn.shopify.com/s/files/1/1571/2505/t/11/assets/Bra_Size_Chart.svg?13904842449763802847" width="996">{% endif%}
+                </div>
+
+<div class="product_features_section_title no_border">{{ section.settings.section_title2 }}</div>
+
+<div class="size_icons_flex">
+  <div class="size_icon xs">xs</div>
+  <div class="size_icon s">s</div>
+  <div class="size_icon m">m</div>
+  <div class="size_icon l">l</div>
+  <div class="size_icon xl">xl</div>
+  <div class="size_icon xxl">xxl</div>
+</div>
+
+<div class="center-contain small">
+  <hr class="space50">
+  <p> Still have sizing questions? We're happy to help!</p>
+  <a class="mad-video-link" style="margin-top:0px;" href="mailto:info@olliegraybras.com" >Click here to get in touch.</a>
+  <hr class="og space50">
+</div>
+
+<div class="wrapper">
+  <div class="product_features_section_title no_border">{{ section.settings.title_text }}</div>
+  {% for block in section.blocks %} 
+  <div class="page-width feature-row no_border">
+    {% capture image_layout %}
+      <div class="feature-row__item">
+        {% if block.settings.image != blank %}
+          {{ block.settings.image | img_url: '600x600' | img_tag: block.settings.image.alt, 'feature-row__image' }}
+        {% else %}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+      </div>
+    {% endcapture %}
+
+    <div class="feature-row product_features_row no_border">
+      {% if block.settings.layout == 'left' %}
+        {{ image_layout }}
+      {% endif %}
+
+      <div class="product_features_item feature-row__item feature-row__text feature-row__text--{{ block.settings.layout }} align-center">
+        {% if block.settings.model_name != blank %}
+          <h2 class="model_name">{{ block.settings.model_name | escape }}</h2>
+        {% endif %}
+        {% if block.settings.bra_size != blank %}
+          <div class="bra_size">Bra Size: {{ block.settings.bra_size }}</div>
+        {% endif %}
+        {% if block.settings.model_height != blank %}
+          <div class="model_height">Height: {{ block.settings.model_height }}</div>
+        {% endif %}
+        {% if block.settings.wears_size != blank %}
+          <div class="wears_size">wears a size {{ block.settings.wears_size }}</div>
+        {% endif %}
+      </div>
+
+      {% if block.settings.layout == 'right' %}
+        {{ image_layout }}
+      {% endif %}
+    </div>
+  </div></div>
+  {% endfor %}
+
+<div class="center-contain small">
+  <hr class="space30">
+  <hr class="og">
+  
+  <div class="product_features_section_title no_border">How to Care for<br>Your Anywhere Bra<sup>™</sup></div>
+  <span class="page_subtitle">your bra needs a little love and attention too!</span>
+  <br><br>
+  <p>Connect straps and hook &amp; eye closure before washing.</p>
+  <p>Machine wash cold and hang to dry.</p>
+  <p>Do not bleach.</p>
+  <p>Do not dry clean.</p>
+</div>
+  
+
+{% schema %}
+  {
+    "name": "Page Settings",
+	"settings": [
+      {
+		"type": "image_picker",
+		"id": "header_img",
+		"label": "Header Image"
+	  },
+	  {
+        "type": "text",
+        "id": "page_title",
+        "label": "Page Title"
+        
+      },
+	  {
+		"type": "text",
+		"id": "step_1_title",
+		"label": "Step 1 Title"
+	  },
+	  {
+		"type": "richtext",
+		"id": "step_1_text",
+		"label": "Step 1 Text"
+	  },
+  	  {
+  		"type": "text",
+  		"id": "step_2_title",
+  		"label": "Step 2 Title"
+  	  },
+	  {
+  		"type": "richtext",
+  		"id": "step_2_text",
+  		"label": "Step 2 Text"
+  	  },
+  	  {
+  		"type": "text",
+  		"id": "step_3_title",
+  		"label": "Step 3 Title"
+  	  },
+  	  {
+  		"type": "richtext",
+  		"id": "step_3_text",
+  		"label": "Step 3 Text"
+  	  },
+  	  {
+  		"type": "text",
+  		"id": "section_title",
+  		"label": "Section Title",
+		"default": "Bra Size Chart"
+  	  },
+  	  {
+  		"type": "image_picker",
+  		"id": "size_chart",
+  		"label": "Size Chart"
+  	  },
+	  {
+		"type": "text",
+		"id": "section_title2",
+		"label": "Section 2 Title",
+		"default": "Ollie Gray<sup>™</sup> Conversion"
+	  }
+	
+    ],
+	  "blocks":[
+	  {
+		"type": "select",
+      	"name": "Model Showcase",
+		"settings": [
+      {
+        "type": "image_picker",
+        	"id": "image",
+        	"label": "Image"
+      },
+      {
+        "type": "select",
+        "id": "layout",
+        "label": "Layout",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "Image on left"
+          },
+          {
+            "value": "right",
+            "label": "Image on right"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "model_name",
+        "label": "Model Name"
+      },
+      {
+        "type": "text",
+       	"id": "bra_size",
+       	"label": "Bra Size"
+      },
+      {
+        "type": "text",
+        "id": "model_height",
+        "label": "Model Height"
+      },
+      {
+   		"type":      "select",
+   		"id":        "wears_size",
+   		"label":     "Wears Size...",
+   		"options": [
+     	{"value": "x-small", "label": "x-small"},
+       	{"value": "small", "label": "small"},
+		{"value": "medium", "label": "medium"},
+		{"value": "large", "label": "large"},
+		{"value": "x-large", "label": "x-large"},
+		{"value": "xx-large", "label": "xx-large"}
+
+   	],
+	"label": "Sizes"
+   
+}
+	]
+   }
+   ]
+	
+	
+  }
+{% endschema %}

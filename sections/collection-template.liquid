@@ -1,0 +1,96 @@
+<!-- /templates/collection.liquid -->
+
+{% if section.settings.header_img %}
+<div style="padding-bottom:20px;">
+                  <img src="{{  section.settings.header_img | img_url: '996x' | format: 'jpg' }}">
+                </div>
+{% endif %}
+
+<div id="CollectionSection" data-section-id="{{ section.id }}" data-section-type="collection-template" data-grid-type="{{ section.settings.collection_products_grid }}">
+  {% if section.settings.collection1 == 'prints' %}{% include 'prints-grid' %}{% endif %}
+  {% if section.settings.collection1 == 'solids' %}{% include 'solids-grid' %}{% endif %}
+  {% if section.settings.collection1 == 'extras' %}{% include 'extras-grid' %}{% endif %}
+</div>
+
+
+<div id="CollectionSection" data-section-id="{{ section.id }}" data-section-type="collection-template" data-grid-type="{{ section.settings.collection_products_grid }}">
+  {% if section.settings.collection2 == 'prints' %}{% include 'prints-grid' %}{% endif %}
+  {% if section.settings.collection2 == 'solids' %}{% include 'solids-grid' %}{% endif %}
+  {% if section.settings.collection2 == 'extras' %}{% include 'extras-grid' %}{% endif %}
+</div>
+<div id="CollectionSection" data-section-id="{{ section.id }}" data-section-type="collection-template" data-grid-type="{{ section.settings.collection_products_grid }}">
+  {% if section.settings.collection3 == 'prints' %}{% include 'prints-grid' %}{% endif %}
+  {% if section.settings.collection3 == 'solids' %}{% include 'solids-grid' %}{% endif %}
+  {% if section.settings.collection3 == 'extras' %}{% include 'extras-grid' %}{% endif %}
+</div>
+
+{% schema %}
+  {
+    "name": "Collection pages",
+    "settings": [
+      	  {
+		"type": "image_picker",
+		"id": "header_img",
+		"label": "Header Image"
+	  		},
+			{
+			"type": "select",
+			"id": "collection1",
+			"options": [
+			  {"value": "prints", "label": "Prints"},
+			  {"value": "solids", "label": "Solids"},
+			  {"value": "extras", "label": "Extras"}
+			],
+			"label": "Collection 1"
+		  },
+		  {
+			"type": "select",
+			"id": "collection2",
+			"options": [
+			  {"value": "prints", "label": "Prints"},
+			  {"value": "solids", "label": "Solids"},
+			  {"value": "extras", "label": "Extras"}
+			],
+			"label": "Collection 2"
+		  },
+		  {
+			"type": "select",
+			"id": "collection3",
+			"options": [
+			  {"value": "prints", "label": "Prints"},
+			  {"value": "solids", "label": "Solids"},
+			  {"value": "extras", "label": "Extras"}
+			],
+			"label": "Collection 3"
+		  },
+		  
+		  
+	  	  {
+        "type": "select",
+        "id": "collection_products_grid",
+        "label": "Grid style",
+        "options": [
+          {
+            "value": "collage",
+            "label": "Collage"
+          },
+          {
+            "value": "grid",
+            "label": "Grid"
+          }
+        ]
+      },
+	
+      {
+        "type": "checkbox",
+        "id": "collection_tags_enable",
+        "label": "Show collection tags"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_vendor_enable",
+        "label": "Show product vendor"
+      }
+    ]
+  }
+{% endschema %}

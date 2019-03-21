@@ -1,0 +1,71 @@
+<div class="section-line-title wrapper"> 
+  <div class="divider-line"></div><img src="https://placehold.it/75"><div class="divider-line"></div>
+</div>
+
+
+<div class="autoplay wrapper quotes">
+  {% for block in section.blocks %}  
+  <div class="message">   
+    {{ block.settings.message-text }}
+    <div class="author-text">{{ block.settings.author-text }}</div>
+  </div>
+  
+    
+ 
+  {% endfor %}
+ 
+      
+</div>
+{% schema %}
+{
+  "name": "Quote Blocks",
+	"max_blocks": 3,
+  "settings": [
+    {
+      "id": "text-box",
+      "type": "text",
+      "label": "Heading",
+      "default": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "select",
+      "name": "Add Quote",
+      "settings": [
+        {
+          "id": "message-text",
+          "type": "textarea",
+       		"label": "Quote"
+        },
+        {
+          "id": "author-text",
+          "type": "text",
+          "label": "Author"
+          
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Quote Blocks",
+      "category": "Quotes",
+      "blocks": [
+        { 
+          "type": "select"
+        },
+        {
+          "type": "select"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

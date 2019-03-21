@@ -1,0 +1,23 @@
+<div id="CollectionSection" data-section-id="{{ section.id }}" data-section-type="collection-template" data-grid-type="{{ section.settings.collection_products_grid }}">
+  <div class="wrapper">
+    {% if section.settings.title != blank %}
+      <div class="section-header text-center">
+        <h2 class="h1 section-header__title">Best Sellers</h2>
+        <hr class="hr--small">
+      </div>
+    {% endif %}
+
+    <div class="grid-uniform">
+
+     
+            {% include 'product-grid-collage' %}
+          
+
+          {% assign grid_item_width = 'medium--one-half large--one-third' %}
+          {% for product in collections[home_featured_products].products %}
+            {% include 'product-grid-item' %}
+          {% endfor %}
+
+    </div>
+  </div>
+</div>

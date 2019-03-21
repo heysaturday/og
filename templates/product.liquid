@@ -1,0 +1,30 @@
+<!-- /templates/product.liquid -->
+{% comment %}
+  The contents of the product.liquid template can be found in /sections/product-template.liquid
+{% endcomment %}
+
+{% section 'product-template' %}
+{% section 'related-products' %}
+<!-- add the reviews divider title -->
+<div id="reviews" class="section-line-title">
+          <div class="divider-line"></div><h2 class="section-line-title-text">reviews</h2><div class="divider-line"></div>
+        </div>
+<div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
+
+<script>
+  // Override default values of shop.strings for each template.
+  // Alternate product templates can change values of
+  // add to cart button, sold out, and unavailable states here.
+  theme.productStrings = {
+    addToCart: {{ 'products.product.add_to_cart' | t | json }},
+    soldOut: {{ 'products.product.sold_out' | t | json }},
+    unavailable: {{ 'products.product.unavailable' | t | json }},
+    backOrder: {{ 'products.product.back_order' | t | json }},
+  };
+</script>
+<!-- <script>
+  pintrk('track', 'checkout');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2617105338174&event=checkout&noscript=1" />
+</noscript> -->
